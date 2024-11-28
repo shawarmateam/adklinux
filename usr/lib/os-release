@@ -1,0 +1,5 @@
+NAME=ADKlinux
+VERSION=2024.11.28-beta
+ID=adklinux
+VERSION_ID=2024.11.28-beta
+PRETTY_NAME="ADKlinux 2024.11.28-beta"
