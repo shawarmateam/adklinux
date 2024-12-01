@@ -1,8 +1,13 @@
-# <file system>	<mount pt>	<type>	<options>	<dump>	<pass>
-/dev/root	/		ext2	rw,noauto	0	1
-proc		/proc		proc	defaults	0	0
-devpts		/dev/pts	devpts	defaults,gid=5,mode=620,ptmxmode=0666	0	0
-tmpfs		/dev/shm	tmpfs	mode=1777	0	0
-tmpfs		/tmp		tmpfs	mode=1777	0	0
-tmpfs		/run		tmpfs	mode=0755,nosuid,nodev	0	0
-sysfs		/sys		sysfs	defaults	0	0
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda3
+UUID=7edc3849-ca76-4404-b3dd-7b831bb4e3c1	/         	ext4      	rw,relatime	0 1
+
+# /dev/sda1
+UUID=BAD8-0410      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sda2
+UUID=7c76cac1-d1b4-4704-b26b-02bf46d3f092	none      	swap      	defaults  	0 0
+

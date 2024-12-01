@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+host=x86_64-pc-linux-gnu
+
+Name: gpgmepp
+Description: GnuPG Made Easy (C++ binding)
+Requires.private: gpg-error, gpgme
+Version: 1.24.0
+Cflags: 
+Libs: -lgpgmepp
+URL: https://www.gnupg.org/software/gpgme/index.html
